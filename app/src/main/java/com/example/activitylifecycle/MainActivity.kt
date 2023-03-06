@@ -70,6 +70,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting() {
     Text(text = stringResource(R.string.text)
+
     )
 }
 
