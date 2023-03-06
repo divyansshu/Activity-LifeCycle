@@ -66,6 +66,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
+    //my line of code
+    Text(text = "learning to contribute to projects")
 }
 
 @Preview(showBackground = true, showSystemUi = true)
