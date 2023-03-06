@@ -1,5 +1,6 @@
 package com.example.activitylifecycle
 
+
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -10,6 +11,9 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+
+import androidx.compose.ui.res.stringResource
+
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.activitylifecycle.ui.theme.ActivityLifeCycleTheme
 
@@ -26,7 +30,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    Greeting()
                 }
             }
         }
@@ -64,14 +68,15 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun Greeting() {
+    Text(text = stringResource(R.string.text)
+    )
 }
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun DefaultPreview() {
     ActivityLifeCycleTheme {
-        Greeting("Android")
+        Greeting()
     }
 }
